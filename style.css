@@ -1,0 +1,86 @@
+#grand-parent{
+    background-image: linear-gradient(to right,#2193b0,#6dd5ed);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+}
+.colm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background-color: skyblue;
+}
+#left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition-property: all;
+    transition-duration: 700ms;
+}
+#right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition-property: all;
+    transition-duration: 700ms;
+}
+.current{
+    background-color: #2193b0;
+    margin-top: 110px;
+    padding: 15px 60px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+.score{
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #2193b0;
+}
+.score-style{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+}
+h1{
+    color: purple;
+}
+.disactive{
+    background-color: rgba(135, 207, 235, 0.491);
+}
+.btn{
+    position: absolute;
+    left: 570px;
+}
+.new{
+    top: 40px; 
+}
+.roll{
+    top: 410px;
+}
+.hold{
+    top: 475px;
+    left: 585px;
+}
+@keyframes rollDice {
+    from{transform: rotate(360deg);}
+    to{transform: rotate(720deg);}
+}
+#image{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 185px;
+    left: 595px;
+}
+.win{
+    background-color: rgba(211, 158, 25, 0.84);
+}
+.activate{
+    pointer-events: auto;
+}
+.deactivate{
+    pointer-events: none;
+}
